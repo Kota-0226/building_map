@@ -13,6 +13,7 @@ function App() {
   useEffect(() => {
     const loadData = async () => {
       const buildings = await parseCsvData('/data.csv');
+      console.log(buildings)
       setBuildings(buildings);
     };
     loadData();
