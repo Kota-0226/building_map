@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useMemo } from 'react';
+import React, { useState, useCallback } from 'react';
 import Map, { Marker } from 'react-map-gl';
 import { Building } from '../types/Building';
 import { BuildingCard } from './BuildingCard';
@@ -13,14 +13,6 @@ export const MapView: React.FC = () => {
     setSelectedBuilding(building);
   }, []);
 
-  // Filter logic for pins
-  const filteredBuildings = useMemo(() => {
-    if (buildings.length > 100) {
-      return buildings.filter(isFavorite);
-    }
-    return buildings;
-  }, [buildings, isFavorite]);
-
   return (
     <div className="h-screen relative">
       <Map
@@ -33,7 +25,7 @@ export const MapView: React.FC = () => {
         mapStyle="mapbox://styles/mapbox/light-v10"
         mapboxAccessToken={import.meta.env.VITE_MAPBOX_TOKEN}
       >
-        {filteredBuildings.map((building) => {
+        {buildings.map((building) => {
           const isSelected = selectedBuilding === building;
           const isFav = isFavorite(building);
 
