@@ -16,13 +16,21 @@ export const BuildingCard: React.FC<BuildingCardProps> = ({
   const favorite = isFavorite(building);
 
   return (
-    <div className="bg-white rounded-lg shadow-md overflow-hidden">
-      <img
-        src={building.imageUrl}
-        alt={building.name}
-        className="w-full h-48 object-cover"
-      />
-      <div className="p-4">
+    <div
+      className="bg-white rounded-lg shadow-md flex overflow-hidden"
+      style={{ maxHeight: '45vh' }}
+    >
+      {/* Image Section */}
+      <div className="w-1/3 h-full overflow-y-auto">
+        <img
+          src={building.imageUrl}
+          alt={building.name}
+          className="w-full h-auto object-cover"
+        />
+      </div>
+
+      {/* Details Section */}
+      <div className="w-2/3 p-4 relative overflow-y-auto">
         <div className="flex justify-between items-start">
           <h3 className="text-xl font-semibold">{building.name}</h3>
           {showFavoriteButton && (
@@ -41,6 +49,13 @@ export const BuildingCard: React.FC<BuildingCardProps> = ({
         </p>
         <p className="text-gray-500 mt-2">{building.description}</p>
         <p className="text-gray-400 text-sm mt-2">{building.address}</p>
+
+        {/* Close Button */}
+        <button
+          className="absolute top-2 right-2 text-gray-500 hover:text-gray-700"
+          onClick={() => console.log('Close card logic here')}
+        >
+        </button>
       </div>
     </div>
   );
