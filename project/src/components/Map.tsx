@@ -12,6 +12,7 @@ export const MapView: React.FC = () => {
   const handleMarkerClick = useCallback((building: Building) => {
     setSelectedBuilding(building);
   }, []);
+  console.log(import.meta.env.VITE_MAPBOX_TOKEN);
 
   return (
     <div className="h-screen relative">
