@@ -2,7 +2,7 @@ export interface Building {
   name: string;
   architect: string;
   year: number;
-  description: string;
+  // description: string;
   imageUrl: string;
   address: string;
   latitude: number;

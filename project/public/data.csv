@@ -1,4 +1,140 @@
-name,architect,year,description,imageUrl,address,latitude,longitude
-国立新美術館,黒川紀章,2007,斬新なデザインの美術館,https://images.unsplash.com/photo-1542051841857-5f90071e7989,東京都港区六本木7-22-2,35.6628,139.7262
-東京スカイツリー,日建設計,2012,世界一高い自立式電波塔,https://images.unsplash.com/photo-1542931287-023b922fa89b,東京都墨田区押上1-1-2,35.7100,139.8107
-森美術館,リチャード・グラッカマン,2003,六本木ヒルズの最上階に位置する美術館,https://images.unsplash.com/photo-1540959733332-eab4deabeeaf,東京都港区六本木6-10-1,35.6604,139.7292
+name,architect,year,imageUrl,address,latitude,longitude
+21世紀キリスト教会,安藤忠雄（あんどうただお）,2014年,https://kenchiku-pers.com/contents/wp-content/uploads/2019/02/21st-century-christ-church01-140x140.jpg,東京都渋谷区広尾5-9−7,35.6492285,139.721324
+AKASAKA K-TOWER,鹿島建設株式会社（かじまけんせつかぶしきかいしゃ）,2012年,https://kenchiku-pers.com/contents/wp-content/uploads/2017/10/akasaka-k-tower01-140x140.jpg,東京都港区元赤坂1-2-7,35.6777869,139.7348263
+FUKUHARA GINZA,芦原太郎（あしはらたろう）,2011年,https://kenchiku-pers.com/contents/wp-content/uploads/2022/05/fukuhara-ginza01-140x140.jpg,東京都中央区銀座7–8–10,35.66878150000001,139.7620597
+G.Itoya,大成建設株式会社（たいせいけんせつ）,2015年,https://kenchiku-pers.com/contents/wp-content/uploads/2018/06/g-itoya01-140x140.jpg,東京都中央区銀座2-7-15,35.6729807,139.7673835
+GINZA PLACE,クライン・ダイサム・アーキテクツ（くらいん・だいさむ・あーきてくつ）,2016年,https://kenchiku-pers.com/contents/wp-content/uploads/2023/03/ginza-place01-140x140.jpg,東京都中央区銀座5-8-1,35.6708855,139.7650033
+JTビル,株式会社日建設計（にっけんせっけい）,1995年,https://kenchiku-pers.com/contents/wp-content/uploads/2019/01/jt-building01-140x140.jpg,東京都港区虎ノ門2-2-1,35.6696922,139.7456221
+PIAS GINZA,株式会社久米設計（くめせっけい）,2009年,https://kenchiku-pers.com/contents/wp-content/uploads/2023/03/pias-ginza01-140x140.jpg,東京都中央区銀座4-8-10,35.6706289,139.7665258
+TBS放送センター,株式会社日本設計（にほんせっけい）,1994年,https://kenchiku-pers.com/contents/wp-content/uploads/2023/11/tokyo-broadcasting-system-center01-140x140.jpg,東京都港区赤坂5-3-6,35.67191,139.7351057
+TH GINZAビル,大江匡（おおえただす）,2014年,https://kenchiku-pers.com/contents/wp-content/uploads/2018/05/th-ginza-building01-140x140.jpg,東京都中央区銀座2-2-18,35.67476,139.7657087
+THE HEXAGON,前田建設工業株式会社（まえだけんせつこうぎょう）,2008年,https://kenchiku-pers.com/contents/wp-content/uploads/2023/11/the-hexagon01-140x140.jpg,東京都港区赤坂5-4-7,35.6720808,139.735878
+TKビル,安藤忠雄（あんどうただお）,1986年,https://kenchiku-pers.com/contents/wp-content/uploads/2019/01/tk-building01-140x140.jpg,東京都港区西麻布3-17-25,35.6582526,139.7239886
+V88ビルディング,光井純（みついじゅん）,2007年,https://kenchiku-pers.com/contents/wp-content/uploads/2018/05/v88-building01-140x140.jpg,東京都中央区銀座2-5-11,35.6734669,139.7664459
+赤坂Bizタワー,株式会社久米設計（くめせっけい）,2008年,https://kenchiku-pers.com/contents/wp-content/uploads/2023/11/akasaka-biz-tower01-140x140.jpg,東京都港区赤坂5-3-1,35.6735577,139.7367217
+赤坂インターシティ,株式会社日本設計（にほんせっけい）,2005年,https://kenchiku-pers.com/contents/wp-content/uploads/2019/01/akasaka-intercity01-140x140.jpg,東京都港区赤坂1-11-44,35.6689179,139.7426095
+赤坂インターシティAIR,株式会社日本設計（にほんせっけい）,2017年,https://kenchiku-pers.com/contents/wp-content/uploads/2019/01/akasaka-intercity-air01-140x140.jpg,東京都港区赤坂1-8-1,35.670183,139.74264
+浅草文化観光センター,隈研吾（くまけんご）,2012年,https://kenchiku-pers.com/contents/wp-content/uploads/2014/04/asakusa_culture_tourist_information_center01-140x140.jpg,東京都台東区雷門2-18-9,35.7106517,139.7965387
+蟻鱒鳶ル,岡啓輔（おかけいすけ）,,https://kenchiku-pers.com/contents/wp-content/uploads/2018/06/arimaston-building01-140x140.jpg,東京都港区三田4-15,35.645915,139.74251
+池袋PARCO,村野藤吾（むらのとうご）,1959年,https://kenchiku-pers.com/contents/wp-content/uploads/2018/04/ikebukuro-parco011-140x140.jpg,東京都豊島区南池袋1-28-2,35.7307796,139.7120701
+ウインズ銀座,黒川紀章（くろかわきしょう）,1990年,https://kenchiku-pers.com/contents/wp-content/uploads/2018/05/wins-ginza01-140x140.jpg,東京都中央区銀座2-10-13,35.6722943,139.7683532
+上野グリーンクラブ,高松伸（たかまつしん）,1992年,https://kenchiku-pers.com/contents/wp-content/uploads/2018/05/ueno-green-club01-140x140.jpg,東京都台東区上野公園3-42,35.7153384,139.7680589
+Esola池袋,大江匡（おおえただす）,2009年,https://kenchiku-pers.com/contents/wp-content/uploads/2018/04/esola-ikebukuro01-140x140.jpg,東京都豊島区西池袋1-12-1,35.7297768,139.7096863
+江戸東京博物館,菊竹清訓（きくたけきよのり）,1993年,https://kenchiku-pers.com/contents/wp-content/uploads/2020/02/edo-tokyo-museum01-140x140.jpg,東京都墨田区横網1-4-1,35.6966803,139.794926
+岡本太郎記念館,坂倉準三（さかくらじゅんぞう）,1954年,https://kenchiku-pers.com/contents/wp-content/uploads/2018/12/taro-okamoto-memorial-museum01-140x140.jpg,東京都港区南青山6-1-19,35.6613077,139.7155479
+表参道けやきビル,團紀彦（だんのりひこ）,2013年,https://kenchiku-pers.com/contents/wp-content/uploads/2019/01/omotesando-keyaki-building01-140x140.jpg,東京都渋谷区神宮前5-1-3,35.665966,139.7102961
+表参道ヒルズ,安藤忠雄（あんどうただお）,2006年,https://kenchiku-pers.com/contents/wp-content/uploads/2019/01/omotesando-hills01-140x140.jpg,東京都渋谷区神宮前4-12-10,35.6673179,139.7085692
+がん研有明病院,丹下健三（たんげけんぞう）,2005年,https://kenchiku-pers.com/contents/wp-content/uploads/2019/01/cancer-institute-hospital01-140x140.jpg,東京都江東区有明3-8-31,35.6343419,139.7950059
+CUE NISHIAZABU,安藤忠雄（あんどうただお）,2003年,https://kenchiku-pers.com/contents/wp-content/uploads/2019/01/cue-nishiazabu01-140x140.jpg,東京都港区西麻布3-3-20,35.65829950000001,139.7266392
+旧神宮前のアトリエ,安藤忠雄（あんどうただお）,1987年,https://kenchiku-pers.com/contents/wp-content/uploads/2019/01/old-atelier-in-jingumae01-140x140.jpg,東京都渋谷区神宮前5-38-4,35.6630703,139.7056516
+旧TOD'S表参道ビル,伊東豊雄（いとうとよお）,2004年,https://kenchiku-pers.com/contents/wp-content/uploads/2019/01/tods-omotesando-building01-140x140.jpg,東京都渋谷区神宮前5-1-5,35.6659248,139.7101451
+旧博物館動物園駅,不明（ふめい）,1933年,https://kenchiku-pers.com/contents/wp-content/uploads/2018/05/old-hakubutsukan-dobutsuen-station01-140x140.jpg,東京都台東区上野公園13-23,35.7186739,139.773516
+GINZA KABUKIZA,隈研吾（くまけんご）,2013年,https://kenchiku-pers.com/contents/wp-content/uploads/2018/06/ginza-kabukiza01-140x140.jpg,東京都中央区銀座4-12-15,35.6700095,139.7679618
+銀座松竹スクエア,株式会社三菱地所設計（みつびしじしょせっけい）,2002年,https://kenchiku-pers.com/contents/wp-content/uploads/2018/05/ginza-shochiku-square01-140x140.jpg,東京都中央区築地1-13-1,35.6684183,139.7695225
+GINZA12,ZERO・ARCHITECTS＋CONSULTING（ぜろ・あーきてくつ ぷらす こんさるてぃんぐ）,2017年,https://kenchiku-pers.com/contents/wp-content/uploads/2018/06/ginza1201-140x140.jpg,東京都中央区銀座4-12-1,35.6701957,139.7679734
+銀座メゾンエルメス,レンゾ・ピアノ（れんぞ・ぴあの）,2001年,https://kenchiku-pers.com/contents/wp-content/uploads/2023/03/ginza-maison-hermes01-140x140.jpg,東京都中央区銀座5-4-1,35.6720221,139.763401
+九段会館,川元良一（かわもとりょういち）,1934年,https://kenchiku-pers.com/contents/wp-content/uploads/2014/05/kudan_kaikan_hall01-140x140.jpg,東京都千代田区九段南1-6-5,35.6943111,139.7514022
+クラシックガーデン文京根津,隈研吾（くまけんご）,2005年,https://kenchiku-pers.com/contents/wp-content/uploads/2018/05/classic-garden-bunkyonezu011-140x140.jpg,東京都文京区根津2-14-18,35.7181342,139.7668148
+グランドプリンスホテル新高輪,村野藤吾（むらのとうご）,1982年,https://kenchiku-pers.com/contents/wp-content/uploads/2018/06/grand-prince-hotel-new-takanawa01-140x140.jpg,東京都港区高輪3-13-1,35.6299848,139.7334293
+国際ビルヂング・帝国劇場,谷口吉郎（たにぐちよしろう）,1966年,https://kenchiku-pers.com/contents/wp-content/uploads/2023/03/kokusai-building-imperial-theater01-140x140.jpg,東京都千代田区丸の内3-1-1,35.6767148,139.7612147
+国際連合大学本部施設,丹下健三（たんげけんぞう）,1992年,https://kenchiku-pers.com/contents/wp-content/uploads/2019/01/united-nations-univesity-headquarters-building01-140x140.jpg,東京都渋谷区神宮前5-53-70,35.6624735,139.7083881
+国立劇場,株式会社竹中工務店（たけなかこうむてん）,1966年,https://kenchiku-pers.com/contents/wp-content/uploads/2015/04/national-theatre01-140x140.jpg,東京都千代田区隼町4-1,35.6815839,139.7424952
+国立国会図書館国際子ども図書館,安藤忠雄（あんどうただお）,2002年,https://kenchiku-pers.com/contents/wp-content/uploads/2018/05/international-library-of-childrens-literature-national-diet-library01-140x140.jpg,東京都台東区上野公園12-49,35.719558,139.7737241
+国立新美術館,黒川紀章（くろかわきしょう）,2006年,https://kenchiku-pers.com/contents/wp-content/uploads/2018/07/the-national-art-center-tokyo01-140x140.jpg,東京都港区六本木7-22-2,35.665296,139.7263662
+国立西洋美術館,ル・コルビュジエ（る・こるびゅじえ）,1959年,https://kenchiku-pers.com/contents/wp-content/uploads/2019/06/the-national-museum-of-western-art01-140x140.jpg,東京都台東区上野公園7-7,35.7156508,139.7763905
+国立総合児童センターこどもの城,株式会社山下設計（やましたせっけい）,1985年,https://kenchiku-pers.com/contents/wp-content/uploads/2019/01/national-childrens-castle01-140x140.jpg,東京都渋谷区神宮前5-53-1,35.6617873,139.7076073
+ザ・ペニンシュラ東京,株式会社三菱地所設計（みつびしじしょせっけい）,2007年,https://kenchiku-pers.com/contents/wp-content/uploads/2023/03/the-peninsula-tokyo01-140x140.jpg,東京都千代田区有楽町1-8-1,35.6746972,139.7606557
+最高裁判所,岡田新一（おかだしんいち）,1974年,https://kenchiku-pers.com/contents/wp-content/uploads/2015/03/supreme-court-of-japan011-140x140.jpg,東京都千代田区隼町4-2,35.6801448,139.7426572
+在日クウェート国大使館,丹下健三（たんげけんぞう）,1970年,https://kenchiku-pers.com/contents/wp-content/uploads/2018/06/embassy-of-the-state-of-kuwait01-140x140.jpg,東京都港区三田4-13-12,35.6453751,139.7415236
+サニーヒルズ南青山店,隈研吾（くまけんご）,2013年,https://kenchiku-pers.com/contents/wp-content/uploads/2018/12/sunnyhills-minami-aoyama01-140x140.jpg,東京都港区南青山3-10-20,35.6657103,139.7161911
+SHINAGAWA GOOS,坂倉準三（さかくらじゅんぞう）,1971年,https://kenchiku-pers.com/contents/wp-content/uploads/2018/06/shinagawa-goos01-140x140.jpg,東京都港区高輪3-13-3,35.6303427,139.7361334
+渋谷ヒカリエ,株式会社日建設計（にっけんせっけい）,2012年,https://kenchiku-pers.com/contents/wp-content/uploads/2015/04/shibuya-hikarie01-140x140.jpg,東京都渋谷区渋谷2-21-1,35.6588387,139.7029809
+GYRE,MVRDV（えむぶいあーるでぃぶい）,2007年,https://kenchiku-pers.com/contents/wp-content/uploads/2019/01/gyre01-140x140.jpg,東京都渋谷区神宮前5-10-1,35.6674536,139.7068537
+自由学園明日館,フランク・ロイド・ライト（ふらんく・ろいど・らいと）,1921年,https://kenchiku-pers.com/contents/wp-content/uploads/2022/09/jiyugakuen-myonichikan01-140x140.jpg,東京都豊島区西池袋2-31-3,35.7266314,139.7072446
+自由学園明日館講堂,遠藤新（えんどうあらた）,1927年,https://kenchiku-pers.com/contents/wp-content/uploads/2022/09/jiyugakuen-myonichikan-kodou01-140x140.jpg,東京都豊島区西池袋2-31-3,35.7266314,139.7072446
+小学館ビル,株式会社日建設計（にっけんせっけい）,2016年,https://kenchiku-pers.com/contents/wp-content/uploads/2018/06/shogakukan-building01-140x140.jpg,東京都千代田区一ツ橋2-3-1,35.69415499999999,139.7581507
+情報学環・福武ホール,安藤忠雄（あんどうただお）,2008年,https://kenchiku-pers.com/contents/wp-content/uploads/2018/05/fukutake-hall01-140x140.jpg,東京都文京区本郷7-3-1,35.7115532,139.7616825
+昭和館,菊竹清訓（きくたけきよのり）,1998年,https://kenchiku-pers.com/contents/wp-content/uploads/2014/04/national_showa_memorial_museum01-140x140.jpg,東京都千代田区九段南1-6-1,35.6950284,139.75078
+新宿グリーンタワービル,株式会社日建設計（にっけんせっけい）,1986年,https://kenchiku-pers.com/contents/wp-content/uploads/2018/03/shinjuku-green-tower-building01-140x140.jpg,東京都新宿区西新宿6-14-1,35.6943389,139.6929086
+神保町三井ビルディング,株式会社山下設計（やましたせっけい）,2003年,https://kenchiku-pers.com/contents/wp-content/uploads/2018/06/jinbocho-mitsui-building01-140x140.jpg,東京都千代田区神田神保町1-105,35.6942485,139.7605759
+新丸の内ビルディング,三菱地所株式会社（みつびしじしょ）,2007年,https://kenchiku-pers.com/contents/wp-content/uploads/2016/04/shin-marunouchi-building01-140x140.jpg,東京都千代田区丸の内1-5-1,35.6825434,139.7642869
+スパイラル,槇文彦（まきふみひこ）,1985年,https://kenchiku-pers.com/contents/wp-content/uploads/2018/12/spiral01-140x140.jpg,東京都港区南青山5-6-23,35.6635829,139.7117499
+すみだ北斎美術館,妹島和世（せじまかずよ）,2016年,https://kenchiku-pers.com/contents/wp-content/uploads/2020/02/the-sumida-hokusai-museum01-140x140.jpg,東京都墨田区亀沢2-7-2,35.6963433,139.8004853
+住友不動産御成門タワー,株式会社日建設計（にっけんせっけい）,2018年,https://kenchiku-pers.com/contents/wp-content/uploads/2019/01/sumitomo-realty-and-development-onarimon-tower01-140x140.jpg,東京都港区芝公園1-1-1,35.6606586,139.7516798
+ソニーシティ,大江匡（おおえただす）,2006年,https://kenchiku-pers.com/contents/wp-content/uploads/2018/06/sony-city01-140x140.jpg,東京都港区港南1-7-1,35.6312119,139.7436477
+代官山 蔦屋書店,クライン・ダイサム・アーキテクツ（くらいん・だいさむ・あーきてくつ）,2011年,https://kenchiku-pers.com/contents/wp-content/uploads/2015/08/daikanyama-tsutaya-books01-140x140.jpg,東京都渋谷区猿楽町17-5,35.6488836,139.699776
+ダイワユビキタス学術研究館,隈研吾（くまけんご）,2014年,https://kenchiku-pers.com/contents/wp-content/uploads/2018/05/the-daiwa-ubiquitous-computing-research-building01-140x140.jpg,東京都文京区本郷7-3-1,35.7115532,139.7616825
+ダイワロイネットホテル東京有明,株式会社梓設計（あずさせっけい）,2018年,https://kenchiku-pers.com/contents/wp-content/uploads/2018/12/daiwa-roynet-hotel-tokyo-ariake01-140x140.jpg,東京都江東区有明3-7-3,35.6344346,139.7916499
+築地KYビル,隈研吾（くまけんご）,2016年,https://kenchiku-pers.com/contents/wp-content/uploads/2018/05/tsukiji-ky-building01-140x140.jpg,東京都中央区築地4-7-5,35.66678890000001,139.7701015
+築地本願寺,伊東忠太（いとうちゅうた）,1934年,https://kenchiku-pers.com/contents/wp-content/uploads/2015/04/tsukiji-hongwanji011-140x140.jpg,東京都中央区築地3-15-1,35.6675748,139.7717624
+Dior表参道,SANAA（さなあ）,2014年,https://kenchiku-pers.com/contents/wp-content/uploads/2019/01/dior-omotesando01-140x140.jpg,東京都渋谷区神宮前5-9-11,35.6673419,139.7072622
+ティファニー銀座,隈研吾（くまけんご）,2008年,https://kenchiku-pers.com/contents/wp-content/uploads/2018/05/tiffany-ginza01-140x140.jpg,東京都中央区銀座2-7-17,35.6731235,139.7674488
+テレビ朝日本社,槇文彦（まきふみひこ）,2003年,https://kenchiku-pers.com/contents/wp-content/uploads/2015/03/tv-asahi01-140x140.jpg,東京都港区六本木6-9-1,35.6596353,139.7309863
+21_21 DESIGN SIGHT,安藤忠雄（あんどうただお）,2007年,https://kenchiku-pers.com/contents/wp-content/uploads/2016/08/2121-design-sight011-140x140.jpg,東京都港区赤坂9-7-6,35.6671651,139.7320014
+東亜道路工業株式会社本社ビル,株式会社日建設計（にっけんせっけい）,2014年,https://kenchiku-pers.com/contents/wp-content/uploads/2016/08/toa-road-corporation-140x140.jpg,東京都港区六本木7-3-7,35.6664235,139.7277509
+東急プラザ銀座,株式会社日建設計（にっけんせっけい）,2016年,https://kenchiku-pers.com/contents/wp-content/uploads/2023/03/tokyu-plaza-ginza01-140x140.jpg,東京都中央区銀座5-2-1,35.672436,139.7624837
+東京ガーデンテラス紀尾井町,株式会社日建設計（にっけんせっけい）,2016年,https://kenchiku-pers.com/contents/wp-content/uploads/2018/03/shinjuku-green-tower-building011-140x140.jpg,東京都千代田区紀尾井町1−2,35.6799364,139.7379442
+東京銀行協会ビル,松井貴太郎（まついきたろう）,1916年,https://kenchiku-pers.com/contents/wp-content/uploads/2016/04/tokyo-bankers-association-building01-140x140.jpg,東京都千代田区丸の内1-3-1,35.68399,139.7632024
+東京銀座資生堂ビル,リカルド・ボフィル（りかるど・ぼふぃる）,2000年,https://kenchiku-pers.com/contents/wp-content/uploads/2022/05/tokyo-ginza-shiseido-building01-140x140.jpg,東京都中央区銀座8-8-3,35.668557,139.7618936
+東京国際フォーラム,ラファエル・ヴィニオリ（らふぁえる・ゔぃにおり）,1996年,https://kenchiku-pers.com/contents/wp-content/uploads/2023/03/tokyo-international-forum01-140x140.jpg,東京都千代田区丸の内3-5-1,35.6767504,139.7634509
+東京歯科大学水道橋校舎新館,株式会社日本設計（にほんせっけい）,2013年,https://kenchiku-pers.com/contents/wp-content/uploads/2019/08/tokyo-dental-college-suidobashi-campus-new-wing01-140x140.jpg,東京都千代田区神田三崎町2-1-14,35.7004151,139.755567
+東京大学第二本部棟,丹下健三（たんげけんぞう）,1979年,https://kenchiku-pers.com/contents/wp-content/uploads/2018/05/the-university-of-tokyo-administration-bureau-building-2nd01-140x140.jpg,東京都文京区本郷7-3-1,35.7115532,139.7616825
+東京大学本部棟,丹下健三（たんげけんぞう）,1979年,https://kenchiku-pers.com/contents/wp-content/uploads/2018/05/the-university-of-tokyo-administration-bureau-building01-140x140.jpg,東京都文京区本郷7-3-1,35.7115532,139.7616825
+東京タワー,内藤多仲（ないとうたちゅう）,1958年,https://kenchiku-pers.com/contents/wp-content/uploads/2018/06/tokyo-tower01-140x140.jpg,東京都港区芝公園4-2-8,35.6585696,139.745484
+東京堂千代田ビルディング,株式会社日建設計（にっけんせっけい）,1977年,https://kenchiku-pers.com/contents/wp-content/uploads/2019/01/tokyodo-chiyoda-building01-140x140.jpg,東京都千代田区九段南1-3-1,35.6942901,139.7529895
+東京都庁舎,丹下健三（たんげけんぞう）,1990年,https://kenchiku-pers.com/contents/wp-content/uploads/2014/04/tokyo_metropolitan_government_building011-140x140.jpg,東京都新宿区西新宿2-8-1,35.6884075,139.6920054
+東京都豊島合同庁舎,大江匡（おおえただす）,1996年,https://kenchiku-pers.com/contents/wp-content/uploads/2022/09/toshima-national-government-building01-140x140.jpg,東京都豊島区西池袋1-17-1,35.7308702,139.7083963
+東京日本橋タワー,株式会社日建設計（にっけんせっけい）,2015年,https://kenchiku-pers.com/contents/wp-content/uploads/2020/09/tokyo-nihonbashi-tower01-140x140.jpg,東京都中央区日本橋2-7-1,35.6818583,139.7743051
+東京ファッションタウンビル,丹下健三（たんげけんぞう）,1996年,https://kenchiku-pers.com/contents/wp-content/uploads/2019/11/tokyo-fashion-town-building01-140x140.jpg,東京都江東区有明3-6-11,35.630788,139.7906112
+東京文化会館,前川國男（まえかわくにお）,1959年,https://kenchiku-pers.com/contents/wp-content/uploads/2019/06/tokyobunkakaikan0013-140x140.jpg,東京都台東区上野公園5-45,35.7136701,139.7760319
+東京ユニオンチャーチ,西松建設株式会社（にしまつけんせつ）,1980年,https://kenchiku-pers.com/contents/wp-content/uploads/2019/01/tokyo-union-church01-140x140.jpg,東京都渋谷区神宮前5-7-7,35.6663829,139.7092484
+刀剣博物館,槇文彦（まきふみひこ）,2017年,https://kenchiku-pers.com/contents/wp-content/uploads/2020/02/the-japanese-sword-museum01-140x140.jpg,東京都墨田区横網1-12-9,35.6988737,139.7936926
+としまエコミューゼタウン,株式会社日本設計（にほんせっけい）,2015年,https://kenchiku-pers.com/contents/wp-content/uploads/2018/05/toshima-eco-musee-town01-140x140.jpg,東京都豊島区南池袋2-45-1,35.7261041,139.716654
+特許庁総合庁舎,株式会社日建設計（にっけんせっけい）,1989年,https://kenchiku-pers.com/contents/wp-content/uploads/2019/03/japan-patent-office-building01-140x140.jpg,東京都千代田区霞が関3-4-3,35.6709468,139.7457208
+豊洲キュービックガーデン,清水建設株式会社（しみずけんせつ）,2011年,https://kenchiku-pers.com/contents/wp-content/uploads/2018/03/toyosu-cubic-garden01-140x140.jpg,東京都江東区豊洲3-2-3,35.6582723,139.7941341
+豊洲シビックセンター,株式会社日建設計（にっけんせっけい）,2015年,https://kenchiku-pers.com/contents/wp-content/uploads/2015/08/toyosu-civic-center01-140x140.jpg,東京都江東区豊洲2-2-18,35.6542839,139.7953256
+豊洲フォレシア,株式会社三菱地所設計（みつびしじしょせっけい）,2014年,https://kenchiku-pers.com/contents/wp-content/uploads/2018/03/toyosu-foresia01-140x140.jpg,東京都江東区豊洲3-2-24,35.6575616,139.7950858
+TRI-SEVEN ROPPONGI,株式会社竹中工務店（たけなかこうむてん）,2016年,https://kenchiku-pers.com/contents/wp-content/uploads/2016/08/tri-seven-roppongi01-140x140.jpg,東京都港区六本木7-7-7,35.6651445,139.7292387
+虎ノ門ヒルズ,株式会社日本設計（にほんせっけい）,2014年,https://kenchiku-pers.com/contents/wp-content/uploads/2019/01/toranomon-hills01-140x140.jpg,東京都港区虎ノ門1-23-1,35.6668739,139.7494354
+中銀カプセルタワービル,黒川紀章（くろかわきしょう）,1972年,https://kenchiku-pers.com/contents/wp-content/uploads/2014/03/nakagin_capsule_tower01-140x140.jpg,東京都中央区銀座8-16-10,35.665681,139.763434
+中野サンプラザ,林昌二（はやししょうじ）,1973年,https://kenchiku-pers.com/contents/wp-content/uploads/2019/08/nakano-sunplaza01-140x140.jpg,東京都中野区中野4-1-1,35.7075857,139.664687
+日本武道館,山田守（やまだまもる）,1964年,https://kenchiku-pers.com/contents/wp-content/uploads/2014/04/nippon_budokan01-140x140.jpg,東京都千代田区北の丸公園2-3,35.6933802,139.7498469
+日本看護協会ビル,黒川紀章（くろかわきしょう）,2004年,https://kenchiku-pers.com/contents/wp-content/uploads/2019/01/japanese-nursing-association-building01-140x140.jpg,東京都渋谷区神宮前5-8-2,35.666909,139.7079245
+日本生命丸の内ガーデンタワー,株式会社日建設計（にっけんせっけい）,2014年,https://kenchiku-pers.com/contents/wp-content/uploads/2016/08/nissay-marunouchi-gardentower01-140x140.jpg,東京都千代田区丸の内1-1-3,35.6844706,139.7622458
+日本大学お茶の水校舎,磯崎新（いそざきあらた）,1987年,https://kenchiku-pers.com/contents/wp-content/uploads/2019/10/nihon-university-ochanomizu-school-building01-140x140.jpg,東京都千代田区神田駿河台1-6,35.697346,139.762752
+日本大学病院,株式会社伊藤喜三郎建築研究所（いとうきさぶろうけんちくけんきゅうじょ）,2014年,https://kenchiku-pers.com/contents/wp-content/uploads/2019/11/nihon-university-hospital01-140x140.jpg,東京都千代田区神田駿河台1-6,35.697346,139.762752
+日本テレビタワー,株式会社三菱地所設計（みつびしじしょせっけい）,2003年,https://kenchiku-pers.com/contents/wp-content/uploads/2018/12/nihon-tv-tower01-140x140.jpg,東京都港区東新橋1-6-1,35.6644356,139.7599263
+日本橋一丁目三井ビルディング,株式会社日本設計（にほんせっけい）,2004年,https://kenchiku-pers.com/contents/wp-content/uploads/2020/09/nihonbashi-1-chome-mitsui-building01-140x140.jpg,東京都中央区日本橋1-4-1,35.6826155,139.7746661
+日本橋高島屋三井ビルディング,株式会社日本設計（にほんせっけい）,2018年,https://kenchiku-pers.com/contents/wp-content/uploads/2020/09/nihonbashi-takashimaya-mitsui-building01-140x140.jpg,東京都中央区日本橋2-5-1,35.6814721,139.7738269
+根津 釜竹,隈研吾（くまけんご）,2005年,https://kenchiku-pers.com/contents/wp-content/uploads/2018/05/nezu-kamachiku01-140x140.jpg,東京都文京区根津2-14-18,35.7181342,139.7668148
+根津美術館,隈研吾（くまけんご）,2009年,https://kenchiku-pers.com/contents/wp-content/uploads/2019/01/nezu-museum01-140x140.jpg,東京都港区南青山6-5-1,35.6619412,139.717499
+パレスホテル東京,株式会社三菱地所設計（みつびしじしょせっけい）,2012年,https://kenchiku-pers.com/contents/wp-content/uploads/2016/08/palace-hotel-tokyo01-140x140.jpg,東京都千代田区丸の内1-1-1,35.6845001,139.7612211
+BANK GALLERY,安藤忠雄（あんどうただお）,2005年,https://kenchiku-pers.com/contents/wp-content/uploads/2019/01/bank-gallery01-140x140.jpg,東京都渋谷区神宮前6-14-5,35.6661644,139.7054821
+ヒューリック青山第二ビル,青木淳（あおきじゅん）,2008年,https://kenchiku-pers.com/contents/wp-content/uploads/2019/01/hulic-aoyama-2nd-building01-140x140.jpg,東京都渋谷区渋谷1-3-3,35.6620546,139.7062919
+広尾タワーズ,槇文彦（まきふみひこ）,1973年,https://kenchiku-pers.com/contents/wp-content/uploads/2019/02/hiroo-towers01-140x140.jpg,東京都港区南麻布4-1-12,35.6503178,139.7231625
+フォレストプラザ表参道,安藤忠雄（あんどうただお）,2001年,https://kenchiku-pers.com/contents/wp-content/uploads/2019/01/forest-plaza-omotesando01-140x140.jpg,東京都渋谷区神宮前4-13-13,35.6673211,139.709392
+フジテレビ本社ビル,丹下健三（たんげけんぞう）,1996年,https://kenchiku-pers.com/contents/wp-content/uploads/2014/04/fuji_television01-140x140.jpg,東京都港区台場2-4-8,35.6267235,139.7743375
+婦人之友社,遠藤楽（えんどうらく）,1963年,https://kenchiku-pers.com/contents/wp-content/uploads/2022/09/fujin-no-tomo-sha-building01-140x140.jpg,東京都豊島区西池袋2-20-16,35.7262851,139.7076565
+プラダ青山店,ヘルツォーク＆ド・ムーロン（へるつぉーく＆ど・むーろん）,2003年,https://kenchiku-pers.com/contents/wp-content/uploads/2018/12/prada-aoyama01-140x140.jpg,東京都港区南青山5-2-6,35.6637562,139.7143963
+本の森ちゅうおう,株式会社類設計室（るいせっけいしつ）,2022年,https://kenchiku-pers.com/contents/wp-content/uploads/2023/07/hon-no-mori-chuo01-140x140.jpg,東京都中央区新富1-13-14,35.6736778,139.7753214
+松屋銀座,株式会社松田平田設計（まつだひらたせっけい）,1953年,https://kenchiku-pers.com/contents/wp-content/uploads/2023/05/matsuya-ginza01-140x140.jpg,東京都中央区銀座3-6-1,35.6721209,139.7663866
+丸の内パークビルディング,三菱地所株式会社（みつびしじしょ）,2009年,https://kenchiku-pers.com/contents/wp-content/uploads/2023/12/marunouchi-park-building01-140x140.jpg,東京都千代田区丸の内2-6-1,35.6785178,139.7627684
+ミキモト銀座2丁目店,伊東豊雄（いとうとよお）,2005年,https://kenchiku-pers.com/contents/wp-content/uploads/2018/06/mikimoto-ginza2-store01-140x140.jpg,東京都中央区銀座2-4-12,35.67376,139.7659499
+ミキモト銀座4丁目本店,鹿島建設株式会社（かじまけんせつ）,2017年,https://kenchiku-pers.com/contents/wp-content/uploads/2018/06/mikimoto-ginza-main-store01-140x140.jpg,東京都中央区銀座4-5-5,35.6718956,139.7653829
+ミッドタウン・イースト,株式会社日建設計（にっけんせっけい）,2007年,https://kenchiku-pers.com/contents/wp-content/uploads/2024/04/tokyo-midtown-east01-140x140.jpg,東京都港区赤坂9-7-1,35.66642909999999,139.7314368
+ミッドタウン・ウェスト,株式会社日建設計（にっけんせっけい）,2007年,https://kenchiku-pers.com/contents/wp-content/uploads/2024/04/midtown-west01-140x140.jpg,東京都港区赤坂9-7-1,35.66642909999999,139.7314368
+ミッドタウン・タワー,スキッドモア・オーウィングズ・アンド・メリル（すきっどもあ・おーうぃんぐず・あんど・めりる）,2007年,https://kenchiku-pers.com/contents/wp-content/uploads/2017/11/midtown-tower01-140x140.jpg,東京都港区赤坂9-7,35.6671651,139.7320014
+三菱ＵＦＪ銀行広尾支店,槇文彦（まきふみひこ）,1981年,https://kenchiku-pers.com/contents/wp-content/uploads/2019/02/mufg-bank-hiroo-branch01-140x140.jpg,東京都港区南麻布4-1-1,35.6506557,139.7226535
+三菱UFJ信託銀行本店ビル,株式会社三菱地所設計（みつびしじしょせっけい）,2003年,https://kenchiku-pers.com/contents/wp-content/uploads/2018/03/mitsubishi-ufj-trust-and-banking-corporation01-140x140.jpg,東京都千代田区丸の内1-4-5,35.6838098,139.7646426
+三菱一号館美術館,ジョサイア・コンドル（じょさいあ・こんどる）,1894年,https://kenchiku-pers.com/contents/wp-content/uploads/2023/03/mitsubishi-ichigokan-museum-tokyo01-140x140.jpg,東京都千代田区丸の内2-6-2,35.6787105,139.7629717
+明産溜池ビル,三菱地所株式会社（みつびしじしょ）,1962年,https://kenchiku-pers.com/contents/wp-content/uploads/2019/02/meisan-tameike-building01-140x140.jpg,東京都港区赤坂1-1-12,35.6709013,139.7447443
+Mercedes-Benz Connection TOKYO,窪田茂（くぼたしげる）,2011年,https://kenchiku-pers.com/contents/wp-content/uploads/2016/08/mercedes-benz-connection-tokyo01-140x140.jpg,東京都港区六本木7-3-10,35.6659871,139.7281212
+モード学園コクーンタワー,丹下都市建築設計（たんげとしけんちくせっけい）,2008年,https://kenchiku-pers.com/contents/wp-content/uploads/2014/04/mode_gakuen_cocoon_tower01-140x140.jpg,東京都新宿区西新宿1-7-3,35.6915872,139.6969445
+LA COLLEZIONE,安藤忠雄（あんどうただお）,1989年,https://kenchiku-pers.com/contents/wp-content/uploads/2018/12/la-collezione01-140x140.jpg,東京都港区南青山6-1-3,35.6625759,139.716313
+両国国技館,鹿島建設株式会社（かじまけんせつかぶしきかいしゃ）,1984年,https://kenchiku-pers.com/contents/wp-content/uploads/2020/02/ryogoku-kokugikan01-140x140.jpg,東京都墨田区横網1-3-28,35.6969529,139.7934876
+両国湯屋江戸遊,株式会社久保都島建築設計事務所（くぼつしまけんちくせっけいじむしょ）,2019年,https://kenchiku-pers.com/contents/wp-content/uploads/2020/02/edoyu01-140x140.jpg,東京都墨田区亀沢1-5-8,35.6966568,139.7984682
+ルーチェ南青山,大江匡（おおえただす）,2008年,https://kenchiku-pers.com/contents/wp-content/uploads/2018/12/luce-minami-aoyama01-140x140.jpg,東京都港区南青山5-5-4,35.6632803,139.7135164
+ルイ・ヴィトン 松屋銀座店,青木淳（あおきじゅん）,2013年,https://kenchiku-pers.com/contents/wp-content/uploads/2015/07/louis-vuitton-matsuya-ginza012-140x140.jpg,東京都中央区銀座3-6-1,35.6721209,139.7663866
+分とく山,今津康夫（いまずやすお）,2018年,https://kenchiku-pers.com/contents/wp-content/uploads/2019/01/waketokuyama01-140x140.jpg,東京都港区南麻布5-1-5,35.6557897,139.7229868
+渡辺パイプ株式会社東京支店,大江匡（おおえただす）,2016年,https://kenchiku-pers.com/contents/wp-content/uploads/2020/02/watanabe-pipe-tokyo01-140x140.jpg,東京都墨田区亀沢1-4-7,35.6968421,139.7990769
+One表参道,隈研吾（くまけんご）,2003年,https://kenchiku-pers.com/contents/wp-content/uploads/2019/01/one-omotesando01-140x140.jpg,東京都港区北青山3-5-29,35.6658348,139.7118407
