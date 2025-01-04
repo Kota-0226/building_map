@@ -1,42 +1,78 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback, useEffect } from 'react';
 import Map, { Marker } from 'react-map-gl';
 import { Building } from '../types/Building';
 import { BuildingCard } from './BuildingCard';
 import { useBuildingStore } from '../store/useBuildingStore';
-import { supabase } from '../supabaseClient'; // Supabaseクライアントをインポート
+import { supabase } from '../supabaseClient';
 import 'mapbox-gl/dist/mapbox-gl.css';
 
 export const MapView: React.FC = () => {
-  const { buildings, isFavorite, addFavorite } = useBuildingStore();
+  const { buildings, isFavorite, addFavorite, setFavorites } = useBuildingStore();
   const [selectedBuilding, setSelectedBuilding] = useState<Building | null>(null);
 
-  const handleMarkerClick = useCallback((building: Building) => {
-    setSelectedBuilding(building);
-  }, []);
+  // 初期化：ユーザーのお気に入りを取得
+  useEffect(() => {
+    const fetchFavorites = async () => {
+      const user = (await supabase.auth.getUser()).data.user;
+    
+      if (!user) {
+        console.error('ログインしてください');
+        return;
+      }
+    
+      console.log('Fetching from "Building Maps" table...');
+    
+      const { data, error } = await supabase
+        .from('"Building Maps"') // 正しいテーブル名を指定
+        .select('*')
+        .eq('user_id', user.id); // 条件: ユーザーIDで絞り込む
+    
+      if (error) {
+        console.error('お気に入りの取得に失敗しました:', error.message);
+        return;
+      }
+    
+      console.log('取得したお気に入り:', data);
+      setFavorites(data || []); // 取得したお気に入りデータをセット
+    };
 
+    fetchFavorites();
+  }, [setFavorites]);
+
+  // お気に入りに追加
   const handleAddToFavorites = async (building: Building) => {
+    if (!building) return;
+
     const user = (await supabase.auth.getUser()).data.user;
 
     if (!user) {
       alert('ログインしてください');
       return;
     }
-    console.log("hi");
+
     const { error } = await supabase.from('favorites').insert({
       user_id: user.id,
-      building_id: building.id, // 必要であればbuildingの識別子を指定
       name: building.name,
+      architect: building.architect,
+      year: building.year,
+      image_url: building.imageUrl,
+      address: building.address,
       latitude: building.latitude,
       longitude: building.longitude,
+      description: building.description,
     });
 
     if (error) {
       console.error('お気に入りの登録に失敗しました:', error.message);
     } else {
+      addFavorite(building); // ローカルの状態に反映
       alert('お気に入りに登録しました');
-      addFavorite(building); // 状態を更新する関数（ローカルに保持する場合）
     }
   };
+
+  const handleMarkerClick = useCallback((building: Building) => {
+    setSelectedBuilding(building);
+  }, []);
 
   return (
     <div className="h-screen relative">
@@ -83,18 +119,16 @@ export const MapView: React.FC = () => {
       {selectedBuilding && (
         <div className="absolute bottom-0 left-0 right-0 bg-white rounded-t-xl shadow-lg transform transition-transform duration-300 ease-in-out">
           <div className="p-4">
-            <BuildingCard building={selectedBuilding} />
+            <BuildingCard
+              building={selectedBuilding}
+              showFavoriteButton={true}
+              onFavorite={() => handleAddToFavorites(selectedBuilding)}
+            />
             <button
               className="absolute top-4 right-4 text-gray-500"
               onClick={() => setSelectedBuilding(null)}
             >
               ✕
-            </button>
-            <button
-              className="mt-4 w-full bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600"
-              onClick={() => handleAddToFavorites(selectedBuilding)}
-            >
-              お気に入りに追加
             </button>
           </div>
         </div>
