@@ -10,7 +10,8 @@ export interface Building {
 }
 
 export interface BuildingFilters {
-  architect?: string;
+  architects?: string[];
+  districts?: string[];
   yearFrom?: number;
   yearTo?: number;
 }
