@@ -55,6 +55,7 @@ export const MapView: React.FC = () => {
         .delete()
         .eq('user_id', user.id)
         .eq('name', building.name); // 一意に識別できる条件
+      console.log(error)
 
       if (error) {
         console.error('お気に入りの削除に失敗しました:', error.message);
