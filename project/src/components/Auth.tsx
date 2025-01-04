@@ -41,7 +41,7 @@ export const Auth: React.FC = () => {
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-50">
       <div className="bg-white shadow-lg rounded-lg p-8 w-full max-w-md">
-        <h1 className="text-2xl font-bold text-brown-600 mb-6 text-center">ログインまたはサインアップ</h1>
+        <h1 className="text-2xl font-bold text-brown-600 mb-6 text-center">ログインまたは新規登録</h1>
         <input
           type="email"
           placeholder="メールアドレス"
@@ -58,15 +58,15 @@ export const Auth: React.FC = () => {
         />
         <button
           onClick={handleLogin}
-          className="w-full bg-brown-600 text-white py-2 px-4 rounded-lg hover:bg-brown-700 focus:outline-none focus:ring-2 focus:ring-brown-400 mb-4"
+          className="w-full bg-blue-400 text-white py-2 px-4 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-brown-400 mb-4"
         >
           ログイン
         </button>
         <button
           onClick={handleSignup}
-          className="w-full bg-gray-300 text-brown-700 py-2 px-4 rounded-lg hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-brown-300"
+          className="w-full bg-white border border-blue-400 text-blue-400 py-2 px-4 rounded-lg hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-brown-300"
         >
-          サインアップ
+          新規登録
         </button>
         {error && <p className="text-red-500 text-sm mt-4">{error}</p>}
       </div>
