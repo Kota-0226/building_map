@@ -6,13 +6,15 @@ import { useBuildingStore } from '../store/useBuildingStore';
 interface BuildingCardProps {
   building: Building;
   showFavoriteButton?: boolean;
+  onFavorite?: () => void;
 }
 
 export const BuildingCard: React.FC<BuildingCardProps> = ({
   building,
   showFavoriteButton = true,
+  onFavorite,
 }) => {
-  const { addFavorite, removeFavorite, isFavorite } = useBuildingStore();
+  const { isFavorite } = useBuildingStore();
   const favorite = isFavorite(building);
 
   return (
@@ -33,9 +35,9 @@ export const BuildingCard: React.FC<BuildingCardProps> = ({
       <div className="w-2/3 p-4 relative overflow-y-auto">
         <div className="flex justify-between items-start">
           <h3 className="text-xl font-semibold">{building.name}</h3>
-          {showFavoriteButton && (
+          {showFavoriteButton && onFavorite && (
             <button
-              onClick={() => favorite ? removeFavorite(building) : addFavorite(building)}
+              onClick={onFavorite}
               className={`p-2 rounded-full ${
                 favorite ? 'text-red-500' : 'text-gray-400'
               }`}
@@ -49,13 +51,6 @@ export const BuildingCard: React.FC<BuildingCardProps> = ({
         </p>
         <p className="text-gray-500 mt-2">{building.description}</p>
         <p className="text-gray-400 text-sm mt-2">{building.address}</p>
-
-        {/* Close Button */}
-        <button
-          className="absolute top-2 right-2 text-gray-500 hover:text-gray-700"
-          onClick={() => console.log('Close card logic here')}
-        >
-        </button>
       </div>
     </div>
   );
