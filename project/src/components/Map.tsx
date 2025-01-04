@@ -7,67 +7,79 @@ import { supabase } from '../supabaseClient';
 import 'mapbox-gl/dist/mapbox-gl.css';
 
 export const MapView: React.FC = () => {
-  const { buildings, isFavorite, addFavorite, setFavorites } = useBuildingStore();
+  const { buildings, isFavorite, addFavorite, removeFavorite, setFavorites } = useBuildingStore();
   const [selectedBuilding, setSelectedBuilding] = useState<Building | null>(null);
 
   // 初期化：ユーザーのお気に入りを取得
   useEffect(() => {
     const fetchFavorites = async () => {
       const user = (await supabase.auth.getUser()).data.user;
-    
+
       if (!user) {
         console.error('ログインしてください');
         return;
       }
-      console.log(user.id)
-    
-      console.log('Fetching from "Building Maps" table...');
-    
+
       const { data, error } = await supabase
-        .from('BuildingMaps') // 正しいテーブル名を指定
+        .from('BuildingMaps') // テーブル名を指定
         .select('*')
         .eq('user_id', user.id); // 条件: ユーザーIDで絞り込む
-    
+
       if (error) {
         console.error('お気に入りの取得に失敗しました:', error.message);
         return;
       }
-    
-      console.log('取得したお気に入り:', data);
-      useBuildingStore.getState().setFavorites(data || []); 
+
+      // ローカル状態に反映
+      setFavorites(data || []);
     };
 
     fetchFavorites();
   }, [setFavorites]);
 
-  // お気に入りに追加
-  const handleAddToFavorites = async (building: Building) => {
-    if (!building) return;
-
+  // お気に入りに追加または削除
+  const toggleFavorite = async (building: Building) => {
     const user = (await supabase.auth.getUser()).data.user;
 
     if (!user) {
       alert('ログインしてください');
       return;
     }
+    // 現在の `is_favorite` 状態を取得
+    // const isCurrentlyFavorite = isFavorite(building);
 
-    const { error } = await supabase.from('favorites').insert({
-      user_id: user.id,
-      name: building.name,
-      architect: building.architect,
-      year: building.year,
-      image_url: building.imageUrl,
-      address: building.address,
-      latitude: building.latitude,
-      longitude: building.longitude,
-      description: building.description,
-    });
+    if (isFavorite(building)) {
+      // Supabaseから削除
+      const { error } = await supabase
+        .from('BuildingMaps')
+        .delete()
+        .eq('user_id', user.id)
+        .eq('name', building.name); // 一意に識別できる条件
 
-    if (error) {
-      console.error('お気に入りの登録に失敗しました:', error.message);
+      if (error) {
+        console.error('お気に入りの削除に失敗しました:', error.message);
+      } else {
+        removeFavorite(building); // ローカルの状態を更新
+      }
     } else {
-      addFavorite(building); // ローカルの状態に反映
-      alert('お気に入りに登録しました');
+      // Supabaseに追加
+      const { error } = await supabase.from('BuildingMaps').insert({
+        user_id: user.id,
+        name: building.name,
+        architect: building.architect,
+        year: building.year,
+        image_url: building.imageUrl,
+        address: building.address,
+        latitude: building.latitude,
+        longitude: building.longitude,
+        description: building.description,
+      });
+
+      if (error) {
+        console.error('お気に入りの登録に失敗しました:', error.message);
+      } else {
+        addFavorite(building); // ローカルの状態を更新
+      }
     }
   };
 
@@ -123,7 +135,7 @@ export const MapView: React.FC = () => {
             <BuildingCard
               building={selectedBuilding}
               showFavoriteButton={true}
-              onFavorite={() => handleAddToFavorites(selectedBuilding)}
+              onFavorite={() => toggleFavorite(selectedBuilding)}
             />
             <button
               className="absolute top-4 right-4 text-gray-500"

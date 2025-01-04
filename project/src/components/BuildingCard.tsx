@@ -6,7 +6,7 @@ import { useBuildingStore } from '../store/useBuildingStore';
 interface BuildingCardProps {
   building: Building;
   showFavoriteButton?: boolean;
-  onFavorite?: () => void; // 新しいプロップ
+  onFavorite?: () => void;
 }
 
 export const BuildingCard: React.FC<BuildingCardProps> = ({
@@ -35,9 +35,9 @@ export const BuildingCard: React.FC<BuildingCardProps> = ({
       <div className="w-2/3 p-4 relative overflow-y-auto">
         <div className="flex justify-between items-start">
           <h3 className="text-xl font-semibold">{building.name}</h3>
-          {showFavoriteButton && onFavorite && ( // onFavoriteが定義されている場合のみボタンを表示
+          {showFavoriteButton && onFavorite && (
             <button
-              onClick={onFavorite} // 渡された関数を呼び出す
+              onClick={onFavorite}
               className={`p-2 rounded-full ${
                 favorite ? 'text-red-500' : 'text-gray-400'
               }`}
