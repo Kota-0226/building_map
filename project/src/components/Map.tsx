@@ -19,11 +19,12 @@ export const MapView: React.FC = () => {
         console.error('ログインしてください');
         return;
       }
+      console.log(user.id)
     
       console.log('Fetching from "Building Maps" table...');
     
       const { data, error } = await supabase
-        .from('"Building Maps"') // 正しいテーブル名を指定
+        .from('BuildingMaps') // 正しいテーブル名を指定
         .select('*')
         .eq('user_id', user.id); // 条件: ユーザーIDで絞り込む
     
@@ -33,7 +34,7 @@ export const MapView: React.FC = () => {
       }
     
       console.log('取得したお気に入り:', data);
-      setFavorites(data || []); // 取得したお気に入りデータをセット
+      useBuildingStore.getState().setFavorites(data || []); 
     };
 
     fetchFavorites();
