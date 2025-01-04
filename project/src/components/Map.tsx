@@ -1,42 +1,92 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback, useEffect } from 'react';
 import Map, { Marker } from 'react-map-gl';
 import { Building } from '../types/Building';
 import { BuildingCard } from './BuildingCard';
 import { useBuildingStore } from '../store/useBuildingStore';
-import { supabase } from '../supabaseClient'; // Supabaseクライアントをインポート
+import { supabase } from '../supabaseClient';
 import 'mapbox-gl/dist/mapbox-gl.css';
 
 export const MapView: React.FC = () => {
-  const { buildings, isFavorite, addFavorite } = useBuildingStore();
+  const { buildings, isFavorite, addFavorite, removeFavorite, setFavorites } = useBuildingStore();
   const [selectedBuilding, setSelectedBuilding] = useState<Building | null>(null);
 
-  const handleMarkerClick = useCallback((building: Building) => {
-    setSelectedBuilding(building);
-  }, []);
+  // 初期化：ユーザーのお気に入りを取得
+  useEffect(() => {
+    const fetchFavorites = async () => {
+      const user = (await supabase.auth.getUser()).data.user;
 
-  const handleAddToFavorites = async (building: Building) => {
+      if (!user) {
+        console.error('ログインしてください');
+        return;
+      }
+
+      const { data, error } = await supabase
+        .from('BuildingMaps') // テーブル名を指定
+        .select('*')
+        .eq('user_id', user.id); // 条件: ユーザーIDで絞り込む
+
+      if (error) {
+        console.error('お気に入りの取得に失敗しました:', error.message);
+        return;
+      }
+
+      // ローカル状態に反映
+      setFavorites(data || []);
+    };
+
+    fetchFavorites();
+  }, [setFavorites]);
+
+  // お気に入りに追加または削除
+  const toggleFavorite = async (building: Building) => {
     const user = (await supabase.auth.getUser()).data.user;
 
     if (!user) {
       alert('ログインしてください');
       return;
     }
-    console.log("hi");
-    const { error } = await supabase.from('favorites').insert({
-      user_id: user.id,
-      building_id: building.id, // 必要であればbuildingの識別子を指定
-      name: building.name,
-      latitude: building.latitude,
-      longitude: building.longitude,
-    });
+    // 現在の `is_favorite` 状態を取得
+    // const isCurrentlyFavorite = isFavorite(building);
 
-    if (error) {
-      console.error('お気に入りの登録に失敗しました:', error.message);
+    if (isFavorite(building)) {
+      // Supabaseから削除
+      const { error } = await supabase
+        .from('BuildingMaps')
+        .delete()
+        .eq('user_id', user.id)
+        .eq('name', building.name); // 一意に識別できる条件
+      console.log(error)
+
+      if (error) {
+        console.error('お気に入りの削除に失敗しました:', error.message);
+      } else {
+        removeFavorite(building); // ローカルの状態を更新
+      }
     } else {
-      alert('お気に入りに登録しました');
-      addFavorite(building); // 状態を更新する関数（ローカルに保持する場合）
+      // Supabaseに追加
+      const { error } = await supabase.from('BuildingMaps').insert({
+        user_id: user.id,
+        name: building.name,
+        architect: building.architect,
+        year: building.year,
+        image_url: building.imageUrl,
+        address: building.address,
+        latitude: building.latitude,
+        longitude: building.longitude,
+        description: building.description,
+      });
+
+      if (error) {
+        console.error('お気に入りの登録に失敗しました:', error.message);
+      } else {
+        addFavorite(building); // ローカルの状態を更新
+      }
     }
   };
+
+  const handleMarkerClick = useCallback((building: Building) => {
+    setSelectedBuilding(building);
+  }, []);
 
   return (
     <div className="h-screen relative">
@@ -83,18 +133,16 @@ export const MapView: React.FC = () => {
       {selectedBuilding && (
         <div className="absolute bottom-0 left-0 right-0 bg-white rounded-t-xl shadow-lg transform transition-transform duration-300 ease-in-out">
           <div className="p-4">
-            <BuildingCard building={selectedBuilding} />
+            <BuildingCard
+              building={selectedBuilding}
+              showFavoriteButton={true}
+              onFavorite={() => toggleFavorite(selectedBuilding)}
+            />
             <button
               className="absolute top-4 right-4 text-gray-500"
               onClick={() => setSelectedBuilding(null)}
             >
               ✕
-            </button>
-            <button
-              className="mt-4 w-full bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600"
-              onClick={() => handleAddToFavorites(selectedBuilding)}
-            >
-              お気に入りに追加
             </button>
           </div>
         </div>
