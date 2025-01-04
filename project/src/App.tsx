@@ -16,7 +16,6 @@ function App() {
   useEffect(() => {
     const checkUser = async () => {
       const { data: { user } } = await supabase.auth.getUser();
-      console.log(user)
       setUser(user);
     };
 
@@ -24,7 +23,6 @@ function App() {
 
     const loadData = async () => {
       const buildings = await parseCsvData('/data.csv');
-      console.log(buildings);
       setBuildings(buildings);
     };
     loadData();
