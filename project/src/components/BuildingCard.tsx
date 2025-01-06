@@ -6,28 +6,38 @@ import { useBuildingStore } from '../store/useBuildingStore';
 interface BuildingCardProps {
   building: Building;
   showFavoriteButton?: boolean;
+  onFavorite?: () => void;
 }
 
 export const BuildingCard: React.FC<BuildingCardProps> = ({
   building,
   showFavoriteButton = true,
+  onFavorite,
 }) => {
-  const { addFavorite, removeFavorite, isFavorite } = useBuildingStore();
+  const { isFavorite } = useBuildingStore();
   const favorite = isFavorite(building);
 
   return (
-    <div className="bg-white rounded-lg shadow-md overflow-hidden">
-      <img
-        src={building.imageUrl}
-        alt={building.name}
-        className="w-full h-48 object-cover"
-      />
-      <div className="p-4">
+    <div
+      className="bg-white rounded-lg shadow-md flex overflow-hidden"
+      style={{ maxHeight: '45vh' }}
+    >
+      {/* Image Section */}
+      <div className="w-1/3 h-full overflow-y-auto">
+        <img
+          src={building.imageUrl}
+          alt={building.name}
+          className="w-full h-auto object-cover"
+        />
+      </div>
+
+      {/* Details Section */}
+      <div className="w-2/3 p-4 relative overflow-y-auto">
         <div className="flex justify-between items-start">
           <h3 className="text-xl font-semibold">{building.name}</h3>
-          {showFavoriteButton && (
+          {showFavoriteButton && onFavorite && (
             <button
-              onClick={() => favorite ? removeFavorite(building) : addFavorite(building)}
+              onClick={onFavorite}
               className={`p-2 rounded-full ${
                 favorite ? 'text-red-500' : 'text-gray-400'
               }`}

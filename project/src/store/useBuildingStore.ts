@@ -5,6 +5,7 @@ interface BuildingStore {
   buildings: Building[];
   favorites: Building[];
   setBuildings: (buildings: Building[]) => void;
+  setFavorites: (favorites: Building[]) => void;
   addFavorite: (building: Building) => void;
   removeFavorite: (building: Building) => void;
   isFavorite: (building: Building) => boolean;
@@ -14,6 +15,7 @@ export const useBuildingStore = create<BuildingStore>((set, get) => ({
   buildings: [],
   favorites: [],
   setBuildings: (buildings) => set({ buildings }),
+  setFavorites: (favorites) => set({ favorites }), // 新しく追加
   addFavorite: (building) => {
     const favorites = [...get().favorites];
     if (!get().isFavorite(building)) {

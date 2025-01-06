@@ -6,7 +6,7 @@ export const Navigation: React.FC = () => {
   const location = useLocation();
 
   const links = [
-    { to: '/', icon: Map, label: 'マップ' },
+    { to: '/map', icon: Map, label: 'マップ' },
     { to: '/list', icon: List, label: 'リスト' },
     { to: '/favorites', icon: Heart, label: 'お気に入り' },
   ];

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { MapView } from './components/Map';
 import { BuildingList } from './components/BuildingList';
@@ -6,11 +6,21 @@ import { FavoritesList } from './components/FavoritesList';
 import { Navigation } from './components/Navigation';
 import { parseCsvData } from './utils/csvParser';
 import { useBuildingStore } from './store/useBuildingStore';
+import { Auth } from './components/Auth';
+import { supabase } from './supabaseClient';
 
 function App() {
   const { setBuildings } = useBuildingStore();
+  const [user, setUser] = useState(null);
 
   useEffect(() => {
+    const checkUser = async () => {
+      const { data: { user } } = await supabase.auth.getUser();
+      setUser(user);
+    };
+
+    checkUser();
+
     const loadData = async () => {
       const buildings = await parseCsvData('/data.csv');
       setBuildings(buildings);
@@ -22,11 +32,17 @@ function App() {
     <BrowserRouter>
       <div className="min-h-screen bg-gray-100">
         <Routes>
-          <Route path="/" element={<MapView />} />
-          <Route path="/list" element={<BuildingList />} />
-          <Route path="/favorites" element={<FavoritesList />} />
+          {user ? (
+            <>
+              <Route path="/map" element={<MapView />} />
+              <Route path="/list" element={<BuildingList />} />
+              <Route path="/favorites" element={<FavoritesList />} />
+            </>
+          ) : (
+            <Route path="*" element={<Auth />} />
+          )}
         </Routes>
-        <Navigation />
+        {user && <Navigation />}
       </div>
     </BrowserRouter>
   );
